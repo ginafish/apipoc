@@ -1,0 +1,33 @@
+Layers:
+	Conceptual Design (ex: ER model)
+	Schema (ex: Relational model)
+	Physical Layer (ex: Files and Indexes)
+
+Relational model
+	defines relations and options (data organization and how to query and manipulate data)
+	say what you want not what to do
+	everything is a relation (data and queries)
+	
+	relations have attributes (atomic values, which can't be split, ex: month)
+		types: string, int, real, date (in Oracle etc), etc
+	relations must have keys, which are unique values, that are used to keep tuples from being duplicate
+	reordering tuples (rows) does not change the relation
+	reordering attributes does not change the relation
+
+	Operations:
+		Selection [curly o]
+		Projection [pie symbol]
+		Cross-product [x]
+		Set-difference [-] : tuples in relation 1 but not in 2 (get unique values between the two)
+		Union [U]
+		Join [sideways hourglass]
+
+
+Schema of a relation:
+	Name of relation and attributes (ex: Person(Name, Address, _SSN_) )
+	Types and constraints of attributes
+
+Schema of a database:
+	Set of relation schemata
+
+
